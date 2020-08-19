@@ -1,0 +1,9 @@
+C:\Users\manel\Documents\Develop\E-com\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\manel\Documents\Develop\E-com\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\manel\Documents\Develop\E-com\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\manel\Documents\Develop\E-com\Core\obj\Debug\netstandard2.0\Core.pdb
