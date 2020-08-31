@@ -63,3 +63,5 @@ C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\manel\Documents\Develop\E-com\API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

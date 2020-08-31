@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vAFx+BNnY6Hp2po/c4C4iHCzox0ExMpWV0ia4asw8uJqWJPJDZ0mlPdtmK0emTuCIE36l8L0sOgWlLAlJRWKYg==",
+  "dgSpecHash": "G5Dkjpf+kWdLlVjMRQkC7uB0WKSMW3pMuB8uNMbDT0cp9+TrO2qQ3e7+THScP9+6uSZDD2JknGBNoOih+M+rtw==",
   "success": true,
   "projectFilePath": "C:\\Users\\manel\\Documents\\Develop\\E-com\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\manel\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\manel\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -37,6 +39,7 @@
     "C:\\Users\\manel\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\manel\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\manel\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
   ],
   "logs": []
