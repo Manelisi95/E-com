@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using API.Core.Entity;
 using API.DTO;
 using API.Errors;
+using API.Helper;
 using AutoMapper;
 using Core.Interfaces;
 using Core.Specifications;
@@ -20,7 +21,8 @@ namespace API.Controllers
         private readonly IGenericRepository<Product> _productRepo;
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
         private readonly IGenericRepository<ProductType> _productTypeRepo;
-        public IMapper Mapper { get; set; }
+        
+                public IMapper Mapper { get; set; }
         private readonly IMapper _mapper;
 
         public ProductsController(IMapper mapper, IGenericRepository<Product> productRepo, IGenericRepository<ProductBrand> productBrandRepo, IGenericRepository<ProductType> productTypeRepo)
@@ -35,13 +37,26 @@ namespace API.Controllers
 
         [HttpGet]
 
-        public async Task<ActionResult<IReadOnlyList<ProductsToReturn>>> GetProducts()
+        public async Task<ActionResult<Pagination<ProductsToReturn>>> GetProducts([FromQuery]ProductSpecParams productParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification();
-            var products = await _productRepo.ListAsync(spec);
-            return Ok(_mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductsToReturn>>(products));        }
+
+            var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
+
+            var countspec = new ProductsWithFiltersForCountSpecification(productParams);
+
+            var totalItems = await _productRepo.CountAsync(countspec);
+
+              var products = await _productRepo.ListAsync(spec);
+
+            var data = _mapper
+            .Map<IReadOnlyList<Product>, IReadOnlyList<ProductsToReturn>>(products);
+            return Ok(new Pagination<ProductsToReturn>(productParams.PageIndex,productParams.PageSize,totalItems,data));
+
+          
+        }
 
         [HttpGet("{id}")]
+
         [ProducesResponseType(typeof(ApiResponse),StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductsToReturn>> GetProduct(int id)
         {
